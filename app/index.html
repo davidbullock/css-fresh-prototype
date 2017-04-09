@@ -37,6 +37,174 @@
         <li>jQuery</li>
       </ul>
     </div>
+
+    <h1>Grids</h1>
+
+    <p class="h2">Grid - Pad Offset</p>
+    <p>Uniform heights essential. Padding uses em, style inner elements to suit.</p>
+    <ul class="o-grid o-grid--pad-off">
+      <li class="{{ classFill }}">
+        <div class="c-crd__in">
+          <p class="h4">
+            hey
+          </p>
+          <p>
+            hoo
+          </p>
+        </div>
+      </li>
+    </ul>
+
+    <p class="h2">Grid - Pad</p>
+    <p>Uniform heights essential. Padding uses em, style inner elements to suit.</p>
+    <ul class="o-grid o-grid--reset o-grid--pad" style="background: #ccc;">
+      <li class="{{ classFill }}">
+        <div style="padding: 1em;background: #eee;">
+          <p class="h4">
+            hey
+          </p>
+        </div>
+      </li>
+    </ul>
+
+    <p class="h2">Grid - Bullets</p>
+    <p>Bullets with CSS columns. Works with ordered or unordered lists. Best to use <span class="label label-inverse rounded">o-grid__col-1-1</span>, <span class="label label-inverse rounded">o-grid__col-1-2</span>, or <span class="label label-inverse rounded">o-grid__col-1-3</span>. Pros = Use any widths, aligns perfectly. Cons = it reads left-to-right only. Use <span class="label label-inverse rounded">c-ls-tree__el</span> to add elipsis funtionality to content.</p>
+    <div class="c-ls-tree">
+      <p>
+        <a href="#" class="h4">
+          Tree Heading
+        </a>
+      </p>
+      <ul class="o-grid o-grid--bullets">
+        <li class="o-grid__col-1-2">
+            <a href="#" class="c-ls-tree__el">
+                Bullet item (count)
+            </a>
+        </li>
+      </ul> 
+    </div>
+    <div class="c-ls-tree">
+      <p>
+        <a href="#" class="h4">
+          Tree Heading
+        </a>
+      </p>
+      <ol class="o-grid o-grid--bullets">
+        <li class="o-grid__col-1-2">
+          <a href="#" class="c-ls-tree__el">
+            Bullet item (count)
+          </a>
+        </li>
+      </ol> 
+    </div>
+
+    <div class="c-ls-tree">
+      <p class="u-tag">
+        <a href="#" class="u-tag__pad">
+          Tree - with .u-tag utility class
+        </a>
+      </p>
+      <ul class="o-grid o-grid--bullets">
+        <li class="o-grid__col-1-2">
+          <a href="#" class="c-ls-tree__el">
+            Bullet item (count)
+          </a>
+        </li>
+       </ul> 
+    </div>
+
+    <div class="c-ls-tree c-ls-tree--inverse">
+      <p class="u-tag">
+        <a href="#" class="u-tag__pad ">
+          Tree inverse - with .u-tag utility class
+        </a>
+      </p>
+      <ul class="o-grid o-grid--bullets">
+        <li class="o-grid__col-1-3">
+          <a href="#" class="c-ls-tree__el">
+            Bullet item (count)
+          </a>
+        </li>
+      </ul> 
+    </div>
+
+    <p class="h2">Grid - Outline</p>
+    <p>Outlines list items, style inner items.</p>
+    <ul class="o-grid o-grid--outline">
+      <li class="{{ classFill }}">
+        <div style="padding: 1em;background: #eee;">
+          <p class="h4">
+            hey
+          </p>
+        </div>
+      </li>
+    </ul>
+    <div class="box-container-small">
+      <ul class="o-grid o-grid--outline">
+        <li class="{{ classFill }} c-filter__item">
+          <a href="#">
+            hey
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <p class="h2">Grid - Line</p>
+    <p>Inner Lines, used with outer containers.</p>
+    <div class="c-filter--tabs">
+      <p>Filter by Brand</p>
+      <ul class="o-grid o-grid--line">
+        <li class="{{ classFill }} c-filter__item">
+          <a href="#">
+            hey
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <p class="h2">Grid</p>
+    <p>Default grid.</p>
+    <ul class="o-grid">
+      <li class="{{ classFill }}">
+        <div>
+          <p class="h4">
+            hey
+          </p>
+        </div>
+      </li>
+    </ul>
+
+    <p class="h2">Grid - Reset</p>
+    <p>Default grid, but with unordered list defaults removed.</p>
+    <ul class="o-grid o-grid--reset">
+      <li class="{{ classFill }}">
+          <div>
+            <p class="h4">
+              hey
+            </p>
+          </div>
+      </li>
+    </ul>
+
+    <p class="h2">Grid - Responsive</p>
+    <p>Responsive grid. Use the class <span class="label label-inverse rounded">.o-grid__col-1-2-r</span> for Column 1/2 on larger tablet / desktop screens.</p>
+    <ul class="o-grid o-grid--outline">
+      <li class="o-grid__col-1-2-r">
+        <div style="padding: 1em;background: #eee;">
+          <p class="h4">
+            Column 1/2 Responsive
+          </p>
+        </div>
+      </li>
+      <li class="o-grid__col-1-2-r">
+        <div style="padding: 1em;background: #eee;">
+          <p class="h4">
+            Column 1/2 Responsive
+          </p>
+        </div>
+      </li>
+    </ul>
+
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
