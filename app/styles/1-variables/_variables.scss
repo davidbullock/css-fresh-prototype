@@ -114,8 +114,32 @@ $base-button-padding-mobile-flex:				$list-padding-top-large-desktop 0; // 10px 
 $base-button-padding-desktop-flex:				$base-button-padding-mobile-flex;
 // when set at 12px 0 - button total height = 44px, Google recommended mobile button height
 
-// Box Shadow
+//== Box Shadow
 $box-shadow:									transparentize(black, 0.05) !default;
+
+// $box-shadow:									-3px 3px 0 $opaque-grey-lightest !default;
+// $box-shadow-mobile:								-3px 3px 0 $opaque-grey-lightest !default;
+
+// $inset-box-shadow:								inset -3px 3px 0 $opaque-grey-lightest !default;
+// $inset-box-shadow-grey-medium:					inset -3px 3px 0 $opaque-grey-medium !default;
+
+// $box-shadow-small:								-1px 1px 0 $opaque-grey-lightest !default;
+// $inset-box-shadow-small:						inset -1px 1px 0 $opaque-grey-lightest !default;
+
+// $box-shadow-grey-medium:						-3px 3px 0 $opaque-grey-medium;
+
+// $box-shadow-button:								-1px 1px 0 $opaque-grey-lightest;
+// $box-shadow-button-hover:						-1px 1px 0 $opaque-grey-medium;
+// $box-shadow-button-active:						inset -1px 1px 0 $opaque-grey-medium;
+
+$card-shadow:									0 1px 1px rgba(0,0,0,0.3) !default;
+$card-shadow-mobile:							$card-shadow !default;
+$card-shadow-inner:								0 1px 1px rgba(0,0,0,0.3) !default;
+$card-shadow-inner-mobile:						$card-shadow-inner !default;
+
+//== Text Shadows 
+$text-shadow-white:								0 1px 0 rgba(255, 255, 255, 0.75) !default;
+$text-shadow-black:								0 -1px 0 rgba(0, 0, 0, 0.25) !default;
 
 //== Transitions
 
@@ -136,8 +160,6 @@ $transition-max-height:							max-height 0.2s ease !default;
 $transition-opacity:							opacity 0.2s ease !default;
 $transition-header:								opacity 0.2s ease, height 0.2s ease !default;
 $transisiton-user-prefs:						rotate 0.2s ease-in-out !default;
-
-
 
 //== Grid
 
@@ -226,3 +248,41 @@ $desktop-only:									new-breakpoint(max-width $break-desktop-min min-width $br
 $desktop-desktop-large:							new-breakpoint(max-width $break-desktop-max min-width $break-desktop-min); // dt and lgdt only
 $desktop-large:									new-breakpoint(min-width $break-desktop-large-min); // large desktop and above
 
+//== Aspect Ratio Variable Fractions
+
+// Video/Photo
+$landscape-2-3: 								2/3;
+$landscape-3-4: 								3/4;
+$landscape-4-6: 								4/6;
+$landscape-5-7: 								5/7;
+$landscape-8-10: 								8/10;
+$widescreen-16-9: 								9/16;
+$widescreen-1-85-1: 							100/185;
+$widescreen-1-6-1: 								10/16;
+$portrait-2-3: 									3/2;
+$portrait-4-6: 									6/4;
+$square-1-1: 									1/1;
+
+// Web Banner
+$pop-under: 									2/4;
+$three-one-rectangle: 							1/3;
+$leaderboard: 									.9/8;
+$full-banner: 									1/7.8;
+$wide-skyscraper: 								3.75/1;
+$skyscraper: 									5/1;
+// for more fractions check out https://en.wikipedia.org/wiki/Web_banner
+
+//== Cards
+
+// Card Height
+$card-height-category-desktop: 					14em;
+$card-height-category-tablet: 					$card-height-category-desktop;
+$card-height-category-mobile:					$card-height-category-desktop;
+
+$card-height-product-desktop: 					17em;
+$card-height-product-tablet: 					$card-height-product-desktop;
+$card-height-product-mobile:					$card-height-product-desktop;
+
+$card-aspect-ratio: 							$landscape-2-3; // see photoshop .psd file for placing lifestyle images to fit landscape 2/3
+$cards-per-row: 								2;
+$cards-per-row-break: 							1;

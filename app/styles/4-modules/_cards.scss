@@ -1,0 +1,138 @@
+// Card
+.c-crd {
+	
+	// c-crds
+	&s {
+		margin-left: -1em;
+		font-size: 20px;
+		@extend %clear-module;
+		
+		.c-crd {
+			padding-left: 1em;
+			padding-bottom: 1em;
+
+			@include jacket(tablet, desktop) {
+				@extend %float-left;
+				@extend %width-one-half;
+			}
+		}
+	}
+	
+	// style this element
+	// .c-crd__in
+	&__in {
+		min-height: 10em;
+		padding: 1em;
+		border: solid transparent;
+		border-width: 4px 0 0;
+		font-size: 14px;
+
+		@include jacket(tablet, desktop) {
+			// @extend %box-container-colour-desktop;
+
+			@include jacket(ios) {
+				// @extend %card-shadows-desktop;
+			}
+		}
+		@include jacket(mobile) {
+			// @extend %box-container-colour-mobile;
+
+			@include jacket(ios) {
+				// @extend %card-shadows-mobile;
+			}
+		}
+	}
+
+	// .c-crd__header
+	&__header {
+		// @extend %merge-box-container-top-desktop;
+		padding: 0.5em 1em 0.25em;
+		font-size: 14px;
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: inherit;
+		}
+
+		@include jacket(tablet, desktop) {
+			// @extend %box-container-colour-desktop;
+
+			@include jacket(ios) {
+				// @extend %card-shadows-inner-desktop;
+			}
+		}
+		@include jacket(mobile) {
+			// @extend %box-container-colour-mobile;
+
+			@include jacket(ios) {
+				// @extend %card-shadows-inner-mobile;
+			}
+		}
+
+		+ .c-crd__in {
+			// @extend %merge-box-container-bottom-desktop;
+		}
+	}
+	
+	&--full {
+		border-width: 4px 1px 1px;
+	}
+	
+	&--red {
+		border-color: red;
+
+		&.c-crd__header {
+			background-color: red;
+			color: #ffffff;
+		}
+	}
+
+	&--green {
+		border-color: green;
+
+		&.c-crd__header {
+			background-color: green;
+			color: #ffffff;
+		}
+	}
+
+	&--orange {
+		border-color: orange;
+
+		&.c-crd__header {
+			background-color: orange;
+			color: #ffffff;
+		}
+	}
+
+	&--blue {
+		border-color: blue;
+
+		&.c-crd__header {
+			background-color: blue;
+			color: #ffffff;
+		}
+	}
+
+	&--purple {
+		border-color: purple;
+
+		&.c-crd__header {
+			background-color: purple;
+			color: #ffffff;
+		}
+	}
+	
+	&--teal {
+		border-color: teal;
+
+		&.c-crd__header {
+			background-color: teal;
+			color: #ffffff;
+		}
+	}
+}
